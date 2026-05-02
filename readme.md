@@ -7,7 +7,10 @@ Edit gentle-notifications.vbs so that the paths are that of your python.exe file
 ### Stopping
 create a file named "stop.txt" in the folder where gentleNotifications.py is.
 
-### (optional) Faster boot
+### Faster boot (optional)
+
+Open Windows Task Scheduler and create a new task for opening the gentleNotifications.py script. This avoids the 5-10 seconds needed for Windows to wake up and starts the script straight away!
+
 #### **General tab**
 
 * Name: `Gentle Notifications 💛`
@@ -18,9 +21,7 @@ create a file named "stop.txt" in the folder where gentleNotifications.py is.
 * New →
 
   * Begin the task: **At log on**
-  * ✔ “Delay task for”: set to **0 seconds**
-
-(important: removes that startup lag)
+  * ✔ “Delay task for”: set to **0 seconds** (important: removes that startup lag)
 
 #### **Actions tab**
 
