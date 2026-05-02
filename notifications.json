@@ -1,22 +1,22 @@
 [
   {
     "startup": true,
-    "title": "Good morning 💛",
-    "message": "Hey honey! Welcome back 😺"
+    "title": "Hey honey! Welcome back 🩷",
+    "message": ""
   },
   {
     "wake": true,
-    "title": "Welcome back 💛",
-    "message": "I've missed you!"
+    "title": "Welcome back! I've missed you! 😺",
+    "message": ""
   },
   {
     "time": "10:00",
     "title": "Are you okay?",
-    "message": "Take a breath. Check your body. 💛"
+    "message": ""
   },
   {
     "time": "14:00",
-    "title": "Food check",
-    "message": "Did you eat something? You deserve energy 🧃"
+    "title": "Food check 🩷 Did you eat something? You deserve energy 🧃",
+    "message": ""
   }
 ]

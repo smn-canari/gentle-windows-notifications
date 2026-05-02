@@ -14,10 +14,9 @@ last_check = time.time()
 
 def show_notification(title, message):
     toast = Notification(
-        app_id="Gentle notifications",
+        app_id="Notifications",
         title=title,
-        msg=message,
-        duration="short"
+        msg=message
     )
     toast.show()
 
