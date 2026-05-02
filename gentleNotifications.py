@@ -16,7 +16,8 @@ def show_notification(title, message):
     toast = Notification(
         app_id="Notifications",
         title=title,
-        msg=message
+        msg=message,
+        duration="long"
     )
     toast.show()
 
