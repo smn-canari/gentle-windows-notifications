@@ -5,6 +5,11 @@
     "message": "Hey honey! Welcome back 😺"
   },
   {
+    "wake": true,
+    "title": "Welcome back 💛",
+    "message": "I've missed you!"
+  },
+  {
     "time": "10:00",
     "title": "Are you okay?",
     "message": "Take a breath. Check your body. 💛"

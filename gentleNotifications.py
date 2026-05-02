@@ -1,5 +1,6 @@
 import json
 import time
+import os
 from datetime import datetime
 from winotify import Notification
 
@@ -8,6 +9,8 @@ with open("notifications.json", "r", encoding="utf-8") as f:
 
 shown_today = set()
 current_day = datetime.now().date()
+
+last_check = time.time()
 
 def show_notification(title, message):
     toast = Notification(
@@ -25,6 +28,14 @@ for notif in notifications:
 
 while True:
     now = datetime.now()
+
+    # detect wake from sleep (gap > 2 minutes)
+    current_time_unix = time.time()
+    if current_time_unix - last_check > 120:
+        for notif in notifications:
+            if notif.get("wake"):
+                show_notification(notif["title"], notif["message"])
+    last_check = current_time_unix
 
     if now.date() != current_day:
         shown_today.clear()
