@@ -53,4 +53,8 @@ while True:
             show_notification(notif["title"], notif["message"])
             shown_today.add(notif_id)
 
+    if os.path.exists("stop.txt"):
+        os.remove("stop.txt")
+        break
+
     time.sleep(30)
