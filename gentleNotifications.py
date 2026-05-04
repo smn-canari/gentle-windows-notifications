@@ -32,6 +32,7 @@ while True:
     # detect wake from sleep (gap > 2 minutes)
     current_time_unix = time.time()
     if current_time_unix - last_check > 120:
+        time.sleep(5)
         for notif in notifications:
             if notif.get("wake"):
                 show_notification(notif["title"], notif["message"])
